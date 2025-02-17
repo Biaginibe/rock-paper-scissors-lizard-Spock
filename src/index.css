@@ -1,0 +1,30 @@
+body {
+  font-family: "VT323", serif;
+  background-color: #141414;
+  color: #009e0d;
+  text-shadow: 2px 2px 0px black;
+}
+
+button {
+  min-width: 8rem;
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-shadow: 2px 2px 0px black;
+  transition: all 0.1s ease-in-out;
+  color: #009e0d;
+}
+
+button:hover {
+  color: #009e0d;
+  text-shadow: 2px 2px 2px black, 0px 0px 10px rgba(0, 255, 0, 0.8);
+}
+
+button:active {
+  text-shadow: 1px 1px 0px black;
+  transform: translateY(2px);
+}

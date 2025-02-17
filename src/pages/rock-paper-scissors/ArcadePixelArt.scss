@@ -1,0 +1,218 @@
+@use "matriz" as m;
+
+$pixel-color-map: m.$pixel-color-map;
+
+$pixel-size: 1rem !default;
+
+$pixel-art: (
+  arcade: m.$matriz,
+);
+
+@function pixelize($matrix, $size) {
+  $l: length($matrix);
+  $sh: "";
+  $i: $l;
+  @for $i from 1 through $l {
+    $row: nth($matrix, $i); //
+
+    @for $j from 1 through length($row) {
+      $item: nth($row, $j);
+
+      @if map-has-key($pixel-color-map, $item) {
+        $sh: $sh +
+          ($j * $size) +
+          " " +
+          ($i * $size) +
+          " " +
+          map-get($pixel-color-map, $item);
+      } @else {
+        @warn 'there is no color specified in "$pixel-color-map" for: "#{$item}"';
+      }
+
+      @if not($j == length($row) and $i == $l) {
+        $sh: $sh + ",";
+      }
+    }
+  }
+
+  @return unquote($sh);
+}
+
+// Mixin to style each item
+@mixin style-item($matrix, $size) {
+  position: relative;
+
+  width: ($size * length(nth($matrix, 1)));
+  height: ($size * length($matrix));
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: (-$size);
+    left: (-$size);
+    width: $size;
+    height: $size;
+
+    box-shadow: pixelize($matrix, $size);
+  }
+}
+
+.icons {
+  list-style: none;
+  margin: 3em auto;
+  max-width: 800px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    margin: 2em;
+  }
+
+  @each $key, $value in $pixel-art {
+    &--#{$key} {
+      @include style-item($value, $pixel-size);
+    }
+  }
+}
+
+.screen {
+  z-index: 102;
+  position: relative;
+  width: 18rem;
+  height: 12rem;
+  margin-top: 19rem;
+  margin-left: 13rem;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.start-button {
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: calc(50% - 4rem);
+
+  /* Animação de piscar */
+  animation: blink 1s infinite;
+}
+
+.start-button:hover {
+  animation: none; /* Para a animação ao passar o mouse */
+}
+
+.info-button {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0rem;
+  min-width: 2rem;
+}
+
+.stop-button {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: -2.5rem;
+}
+
+.arcade-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  transition: transform 0.5s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zoomed {
+  transform: translate(-50%, -50%) scale(1.8);
+  z-index: 10;
+}
+
+.game {
+  padding: 12px;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.8rem;
+  margin-top: 2rem;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 3rem;
+}
+
+.choice-button {
+  font-size: 0.8rem;
+  min-width: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.result-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-side,
+.computer-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.chosen-img {
+  width: 4rem;
+  height: 4rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.option-name {
+  font-size: 1rem;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

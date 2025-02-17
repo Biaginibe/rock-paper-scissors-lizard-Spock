@@ -1,0 +1,77 @@
+(o o p p o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o p p o o),
+(o p a a p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p a a p o),
+(o p a a p b b c c c c c e e e e e e f f f f f f f f f f f f f f f f b b b b b p a a p o),
+(o p a a p b b c c c d g g g d g g e d g g g d g g g d g g f d g g g b b b b b p a a p o),
+(o p a a p b b c c c d g d g d g d g d g f f d g d g d g d g d g b b b b b b b p a a p o),
+(o p a a p b b c c c d h h h d h h e d h f f d h h h d h d h d h h b b b b b b p a a p o),
+(o p a a p b b c c c d h d h d h d h d h f f d h d h d h d h d h b b b b b b b p a a p o),
+(o p a a p b b c c c d i d i d i d i d i i i d i d i d i i f d i i i b b b b b p a a p o),
+(o p a a p b b c c c c c e e e e e e f f f f f f f f f f f f f f f f b b b b b p a a p o),
+(o p a a p j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j p a a p o),
+(o p k k p m n n n n d d d d d d c c c c c c c c c c c c c c c d d d d d n n n p k k p o),
+(o p l l l p m n n n n d d d d d d c c c c c c c c c c c c c d d d d d n n n p l l l p o),
+(o o p l l l p m n n n n d d d d d d c c c c c c c c c c c d d d d d n n n p l l l p o o),
+(o o o p t t t p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p t t t p o o o),
+(o o o o p p p p r r r r r r r r r r r r r r r r r r r r r r r r r r r r p p p p o o o o),
+(o o o o p q q p r r r r r r r r r r r r r r r r r r r r r r r r r r r r p q q p o o o o),
+(o o o o p a a p r r r p p p p p p p p p p p p p p p p p p p p p p r r r p a a p o o o o),
+(o o o o p a a p r r p a a a a a a a a a a a a a a a a a a a a a a p r r p a a p o o o o),
+(o o o o p a a p s s p a p p p p p p p p p p p p p p p p p p p p a p s s p a a p o o o o),
+(o o o o p a a p s s p v p u u u u u u u u u u u u u u u u u u p v p s s p a a p o o o o),
+(o o o o p a a p s s p v p u u u u u u u u u u u u u u u u u u p v p s s p a a p o o o o),
+(o o o o p a a p s s p v p u u u u u u u u u u u u u u u u u u p v p s s p a a p o o o o),
+(o o o o p a a p s s p v p u u u u u u u u u u u u u u u u u u p v p s s p a a p o o o o),
+(o o o o p a a p s s p v p u u u u u u u u u u u u u u u u u u p v p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p h p u u u u u u u u u u u u u u u u u u p h p s s p a a p o o o o),
+(o o o o p a a p s s p a p u u u u u u u u u u u u u u u u u u p a p s s p a a p o o o o),
+(o o o o p a a p s s p a p p p p p p p p p p p p p p p p p p p p a p s s p a a p o o o o),
+(o o o o p a a p s s p a a a a a a a a a a a a a a a a a a a a a a p s s p a a p o o o o),
+(o o o o p a a p s s p p p p p p p p p p p p p p p p p p p p p p p p s s p a a p o o o o),
+(o o o o p w a p s s r r r r r r r r r r r r r r r r r r r r r r r r s s p a w p o o o o),
+(o o o o p w w p s r p p p r s s s s s s s s s s s s s s s s r p p p r s p w w p o o o o),
+(o o o o p p p p r p y z z p r s s s s s s s s s s s s s s r p z y y p r p p p p o o o o),
+(o o o o p v v p p p y z z p p p p p p p p p p p p p p p p p p z y y p p p v v p o o o o),
+(o o o p v v p x A A p p p A A B B B B B B B B B B B B B B B A p p p A A x p v v p o o o),
+(o o o p v v p A A A p C p A A A p p p B B B B B B p p p B B B p C p A A A p v v p o o o),
+(o o p v v p x A A A p C p A A p z z z p B B B B p z z z p B B p C p A A A x p v v p o o),
+(o o p v v p A A A p D p D p A p F F F p B B B B p F F F p B p D p D p A A A p v v p o o),
+(o p v v p x A A A p D D D p A p G G G p B B B B p G G G p B p D D D p A A A x p v v p o),
+(o p v v p A A A A x p p p x A A p p p A B B B B A p p p A B A p p p A A A A A p v v p o),
+(p v v p x A A A A A A A A A A B A A A B B B B B B A A A B B B B A A A A A A A x p v v p),
+(p k k p A A A A A A A A A A B B B B B B B B B B B B B B B B B B A A A A A A A A p k k p),
+(p w w p E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E p w w p),
+
+(p w a p H H I I I I I H H H H H H J J J J J J J J J J J J J J J J J J H H H H H p a w p),
+(p a a p H H I I I I I H H H H H H J J J J J J J J J J J J J J J J J J H H H H H p a a p),
+(p a a p H H I I I I I H H H H H H J J J J J J J J J J J J J J J J J J H H H H H p a a p),
+(p a a p H H I I I I I H H H H H H J J J J J J J J J J J J J J J J J J H H H H H p a a p),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
