@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./arcadePixelArt.scss";
+import "./ArcadePixelArt.scss";
 import pedraImg from "../../assets/pedra.png";
 import papelImg from "../../assets/papel.png";
 import tesouraImg from "../../assets/tesoura.png";
