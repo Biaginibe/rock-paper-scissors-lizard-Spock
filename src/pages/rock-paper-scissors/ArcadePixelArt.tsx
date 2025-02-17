@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./arcadePixelArt.scss";
 import pedraImg from "../../assets/pedra.png";
 import papelImg from "../../assets/papel.png";
@@ -43,7 +43,8 @@ const ArcadePixelArt: React.FC = () => {
   const [playerChoice, setPlayerChoice] = useState<string | null>(null);
   const [computerChoice, setComputerChoice] = useState<string | null>(null);
   const [result, setResult] = useState<string>("");
-  const [rolling, setRolling] = useState<boolean>(false);
+
+  const [, setRolling] = useState<boolean>(false);
 
   const handleChoice = (choice: string): void => {
     setRolling(true);
