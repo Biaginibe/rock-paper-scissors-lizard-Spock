@@ -1,9 +1,9 @@
-name: Deploy GitHub Pages
+name: Deploy para GitHub Pages
 
 on:
   push:
     branches:
-      - master
+      - master # O deploy será acionado quando houver um push na branch master
 
 permissions:
   contents: write
